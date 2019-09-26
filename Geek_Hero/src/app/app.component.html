@@ -1,0 +1,46 @@
+<ion-app>
+    <ion-app >
+        <ion-menu (click)="refresh()" contentId="content1" side="start" class="background" color="warning">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>
+                  <ion-label (click)='close()' routerLink="./login">Sign in/Sign up</ion-label>
+              </ion-title>
+            </ion-toolbar>
+          </ion-header>
+    
+          <ion-content>
+
+              <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+                  <ion-label (click)='close()' routerLink="./help">Help</ion-label>
+                </ion-item>
+
+              <ion-item text-center lines="none" class="nav-menu" menu-toggel="left" >
+                  <ion-label (click)='close()' routerLink="./contact">Contact us</ion-label>
+                </ion-item>
+
+           <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+              <ion-label (click)='close()' routerLink="./rate">Rate this app</ion-label>
+            </ion-item>
+          
+
+          <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+              <ion-label (click)='close()' routerLink="./wishlist"></ion-label>
+            </ion-item>
+          
+
+            <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+                <ion-label (click)='close()' routerLink="./rate" size="small" color="light">version 1.0.0</ion-label>
+              </ion-item>
+          </ion-content>
+    
+    
+        </ion-menu>
+        <ion-router-outlet id="content1" main></ion-router-outlet>
+      </ion-app>
+
+</ion-app>
+
+
+
+

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-icon name="arrow-round-back" slot="start" size="medium" routerLink="../login"></ion-icon>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+      </ion-item>
+
+
+    <img class="displayed"  height="150 px" width="150 px" src="assets/logo.PNG">
+
+    <ion-item text-center lines="none" class="nav-menu" menu-toggel="left" >
+      <ion-label>New to Geek Hero. Sign up</ion-label>
+      </ion-item>
+
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item lines="none">
+              <ion-label position="floating"></ion-label>
+              <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+            </ion-item>
+            
+          <ion-item>
+            <ion-label position="floating">Email<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" [(ngModel)]="username"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="floating">Confirm password<ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="password" [(ngModel)]="cpassword"></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+          </ion-item>
+
+        <ion-button expand="full" color="medium" id="btnLogin" (click)="register()">SIGN UP</ion-button>
+        <ion-button expand="full" color="medium" id="btnLogin" ><ion-icon name="logo-facebook"></ion-icon><ion-icon></ion-icon>CONTUNIE WITH FACEBOOK</ion-button>
+    
+
+</ion-content>

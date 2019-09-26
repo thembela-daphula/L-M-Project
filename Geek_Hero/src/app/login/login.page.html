@@ -1,0 +1,56 @@
+<ion-header no-border>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-icon name="arrow-round-back" slot="start" size="medium" routerLink="../tabs"></ion-icon>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item  text-center lines="none" class="nav-menu" menu-toggel="left">
+      </ion-item>
+
+    <ion-item text-center lines="none" class="nav-menu" menu-toggel="left" >
+      </ion-item>
+
+    <img class="displayed"  height="150 px" width="150 px" src="assets/logo.PNG">
+
+    <ion-item text-center lines="none" >
+        <ion-label color="dark">Already a customer? Sign in</ion-label>
+        </ion-item>
+
+        <ion-item text-center lines="none" >
+            <ion-label class="testclasses" id="bold">You can log in using either your Geek Hero account or Facebook</ion-label>
+          </ion-item>
+
+
+          <ion-list lines="full" class="ion-no-margin ion-no-padding">
+              <ion-item>
+                <ion-label position="floating">Email<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required type="text" [(ngModel)]="username"></ion-input>
+              </ion-item>
+    
+              <ion-item>
+                <ion-label position="floating">Password<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required type="password" [(ngModel)]="password"></ion-input>
+              </ion-item>
+            </ion-list>
+
+            <ion-item lines="none" size="small">
+                <ion-label class="testclass" size="small" color="success">Forgot password?</ion-label>
+            </ion-item>
+            
+
+            <ion-item text-center lines="none" class="nav-menu" menu-toggel="left">
+              </ion-item>
+            
+                  <ion-button expand="full" color="medium" (click)="login()">SIGN IN</ion-button>
+                  <ion-button expand="full" color="medium" ><ion-icon name="logo-facebook"></ion-icon><ion-icon></ion-icon>CONTUNIE WITH FACEBOOK</ion-button>
+
+                  <ion-item lines="none" size="small" text-center>
+                      <ion-label class="testclass" size="small">New to Geek Hero? <ion-text color="success" routerLink="../register"> Sign up</ion-text></ion-label>
+                  </ion-item>
+           
+
+</ion-content>
