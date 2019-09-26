@@ -30,8 +30,23 @@ const routes: Routes = [
      },
      { path: 'contact',
       loadChildren: '../contact/contact.module#ContactPageModule' },
+
      { path: 'rate',
       loadChildren: '../rate/rate.module#RatePageModule' },
+
+      { path: 'accessories',
+       loadChildren: '../accessories/accessories.module#AccessoriesPageModule' },
+
+      { path: 'cosplay',
+      loadChildren: '../cosplay/cosplay.module#CosplayPageModule'
+    },
+
+    { path: 'newin',
+    loadChildren: '../newin/newin.module#NewinPageModule'
+    },
+    { path: 'hoddies',
+    loadChildren: '../hoddies/hoddies.module#HoddiesPageModule'
+    },
     ]
   },
   {
